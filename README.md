@@ -27,8 +27,9 @@ pip install -r requirements.txt
 ### 4. Data Location
 
 Place the following files in the data/ directory:
-brent_prices.csv
+BrentOilPrices.csv
 key_oil_market_events.csv
+Key events are loaded from data/key_oil_market_events.csv and used to contextualize volatility spikes and detected change points.
 Methodology
 
 Time series exploratory analysis of raw prices
