@@ -1,16 +1,16 @@
-event_date,event_name,event_type,description
-2003-03-20,Iraq War Begins,Geopolitical,US-led invasion of Iraq raises concerns over Middle East oil supply disruptions
-2005-08-29,Hurricane Katrina,Economic Shock,Hurricane damages US Gulf oil infrastructure causing short-term supply shocks
-2008-09-15,Global Financial Crisis,Economic Shock,Collapse of Lehman Brothers triggers global recession and oil demand collapse
-2010-12-17,Arab Spring Begins,Geopolitical,Political unrest spreads across North Africa and Middle East oil producers
-2011-03-19,Libyan Civil War,Geopolitical,Oil production in Libya is severely disrupted due to armed conflict
-2014-11-27,OPEC Maintains Output,OPEC Policy,OPEC decides not to cut production despite falling oil prices
-2016-02-16,Oil Price Crash Bottom,Economic Shock,Brent prices fall below $30 amid global oversupply concerns
-2016-11-30,OPEC Production Cut Agreement,OPEC Policy,OPEC and partners agree on coordinated production cuts
-2018-05-08,US Withdraws from Iran Deal,Geopolitical,Reimposition of sanctions reduces Iranian oil exports
-2019-09-14,Saudi Aramco Attack,Geopolitical,Drone attacks temporarily knock out significant Saudi oil production
-2020-03-11,COVID-19 Declared Pandemic,Economic Shock,Global lockdowns cause historic collapse in oil demand
-2020-04-12,OPEC Plus Historic Cut,OPEC Policy,Largest coordinated oil production cut in history to stabilize prices
-2021-10-04,Global Energy Crisis,Economic Shock,Post-pandemic demand surge causes global energy shortages
-2022-02-24,Russia Ukraine War,Geopolitical,Sanctions and conflict disrupt oil supply from a major producer
-2022-10-05,OPEC Plus Output Cut,OPEC Policy,OPEC+ announces production cuts amid inflation and recession fears
+date,event,category
+2003-03-20,US-led invasion of Iraq,Geopolitical conflict
+2008-09-15,Global Financial Crisis,Economic shock
+2010-12-17,Arab Spring begins,Geopolitical unrest
+2011-02-15,Libyan civil war disrupts oil supply,Geopolitical conflict
+2014-06-10,ISIS advances in Iraq,Geopolitical conflict
+2014-11-27,OPEC decides not to cut production,OPEC policy
+2016-01-16,Iran sanctions lifted,Sanctions
+2016-11-30,OPEC production cut agreement,OPEC policy
+2018-05-08,US withdraws from Iran nuclear deal,Sanctions
+2019-09-14,Saudi Aramco oil facility attack,Supply disruption
+2020-03-11,COVID-19 declared global pandemic,Economic shock
+2020-04-12,OPEC+ historic production cuts,OPEC policy
+2021-03-23,Suez Canal blockage,Supply disruption
+2022-02-24,Russia invades Ukraine,Geopolitical conflict
+2022-09-05,OPEC+ production cut announcement,OPEC policy
