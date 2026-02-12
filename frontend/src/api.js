@@ -1,9 +1,16 @@
-import axios from "axios";
+const BASE_URL = "http://127.0.0.1:5000/api";
 
-const API = axios.create({
-  baseURL: "http://127.0.0.1:5000/api",
-});
+export async function fetchPrices() {
+  const res = await fetch(`${BASE_URL}/prices`);
+  return res.json();
+}
 
-export const fetchPrices = () => API.get("/prices");
-export const fetchEvents = () => API.get("/events");
-export const fetchChangePoints = () => API.get("/change-points");
+export async function fetchEvents() {
+  const res = await fetch(`${BASE_URL}/events`);
+  return res.json();
+}
+
+export async function fetchChangePoints() {
+  const res = await fetch(`${BASE_URL}/change-points`);
+  return res.json();
+}
