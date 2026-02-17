@@ -1,0 +1,36 @@
+import pandas as pd
+import numpy as np
+import pytest
+from src.models.change_point_model import detect_change_point
+
+
+def test_detect_change_point_returns_dict():
+    series = pd.Series(np.random.randn(100))
+    result = detect_change_point(series)
+    assert isinstance(result, dict)
+
+
+def test_detect_change_point_has_required_keys():
+    series = pd.Series(np.random.randn(100))
+    result = detect_change_point(series)
+
+    assert "change_point_index" in result
+    assert "mean_before" in result
+    assert "mean_after" in result
+    assert "score" in result
+
+
+def test_detect_change_point_detects_shift():
+    data = np.concatenate([np.ones(50), np.ones(50) * 10])
+    series = pd.Series(data)
+
+    result = detect_change_point(series)
+
+    assert result["score"] > 5
+
+
+def test_short_series_raises_error():
+    series = pd.Series([1, 2, 3])
+
+    with pytest.raises(ValueError):
+        detect_change_point(series)

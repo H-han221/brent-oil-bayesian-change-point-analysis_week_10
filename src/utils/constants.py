@@ -1,0 +1,2 @@
+WINDOW_SIZE: int = 30
+SIGNIFICANCE_LEVEL: float = 0.05

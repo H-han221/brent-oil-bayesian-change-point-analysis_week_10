@@ -1,17 +1,15 @@
 # =========================
-# Python
+# 🔹 Python / Flask
 # =========================
+
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-*.so
-*.egg-info/
-.eggs/
-dist/
-build/
+*.sqlite3
+*.db
 
-# Virtual Environment
+# Virtual environment
 .venv/
 venv/
 env/
@@ -19,28 +17,47 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
-# VS Code
-.vscode/
+# Environment variables
+.env
 
-# Mac / Windows system files
+# =========================
+# 🔹 Node / React / Vite
+# =========================
+
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# 🔹 OS Files
+# =========================
+
 .DS_Store
 Thumbs.db
 
 # =========================
-# Backend
+# 🔹 IDE / Editor
 # =========================
-backend/__pycache__/
-backend/*.db
+
+.vscode/
+.idea/
 
 # =========================
-# React Frontend
+# 🔹 Build & Cache
 # =========================
-frontend/node_modules/
-frontend/build/
-frontend/.env
 
-# Logs
 *.log
+.cache/
+coverage/
 
-# Environment variables
-.env
+# =========================
+# 🔹 Temporary files
+# =========================
+
+*.tmp
+*.temp

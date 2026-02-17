@@ -1,65 +1,94 @@
-# brent-oil-bayesian-change-point-analysis_week_11
-Bayesian change point analysis of Brent oil prices to quantify the impact of major geopolitical, economic, and OPEC-related events using PyMC and time series methods.
-## Project Overview
+# Brent Oil Bayesian Change Point Analysis
 
-This project applies Bayesian Change Point Analysis to historical Brent oil prices (1987–2022) to identify structural breaks in price behavior and associate them with major geopolitical, economic, and OPEC-related events.
+## 📌 Project Overview
 
-The analysis supports data-driven decision-making for investors, policymakers, and energy companies by quantifying how significant global events influence oil price dynamics under uncertainty.
+This project analyzes historical Brent Oil prices to detect structural changes using Bayesian Change Point Detection. The goal is to identify significant market shifts and relate them to major global oil market events.
 
-Key techniques include:
-- Time series exploratory analysis
-- Log-return transformation and stationarity testing
-- Bayesian inference using PyMC
-- Probabilistic change point detection
-- Event-based interpretation of market regime shifts
-## Setup Instructions
+The project is divided into three main tasks:
 
-### 1. Clone Repository
+- Task 1: Exploratory Data Analysis (EDA) & Interim Report
+- Task 2: Bayesian Change Point Modeling
+- Task 3: Full-Stack Dashboard (Flask + React)
+
+---
+
+# 🧠 Task 1: Exploratory Data Analysis (EDA)
+
+## Objective
+Understand the structure, distribution, and trends of Brent oil prices.
+
+## Steps Performed
+- Loaded and cleaned BrentOilPrices.csv
+- Converted Date column to datetime
+- Visualized price trends over time
+- Summary statistics analysis
+- Identified volatility patterns
+
+## Output
+- Clean dataset
+- Initial insights report (Interim Report)
+- Visualizations of price movement
+
+---
+
+# 🔬 Task 2: Bayesian Change Point Detection
+
+## Objective
+Detect structural breakpoints in Brent oil prices using Bayesian methods.
+
+## Approach
+- Modeled price time series
+- Applied Bayesian change point detection
+- Identified probable regime shifts
+- Saved detected change points
+
+## Output
+- change_point_results.json
+- Interpretation of major change periods
+
+---
+
+# 🌐 Task 3: Full-Stack Dashboard
+
+## Architecture
+
+Frontend:
+- React (Vite)
+- Chart.js
+- Fetch API
+
+Backend:
+- Flask
+- Pandas
+- REST API endpoints
+
+## API Endpoints
+
+- `/api/prices`
+- `/api/events`
+- `/api/change-points`
+
+## Features
+
+- Interactive Brent oil price chart
+- Market event listing
+- Detected change points display
+
+---
+
+# 🚀 How to Run the Project
+
+## Backend (Flask)
+
 ```bash
-git clone https://github.com/your-username/brent-oil-bayesian-change-point-analysis.git
-cd brent-oil-bayesian-change-point-analysis
-### 2. Create Virtual Environment
-python -m venv venv
-source venv/bin/activate   # Mac/Linux
-venv\Scripts\activate      # Windows
-### 3. Install Dependencies
+cd backend
+python -m venv .venv
+.venv\Scripts\activate
 pip install -r requirements.txt
-### 4. Data Location
+python app.py
 
-Place the following files in the data/ directory:
-BrentOilPrices.csv
-key_oil_market_events.csv
-Key events are loaded from data/key_oil_market_events.csv and used to contextualize volatility spikes and detected change points.
-Methodology
+##Frontend (React)
 
-Time series exploratory analysis of raw prices
-
-Log-return transformation for stationarity
-
-Augmented Dickey-Fuller (ADF) testing
-
-Volatility analysis using rolling statistics
-
-Bayesian reasoning to motivate change point detection
-
-Assumptions & Limitations
-
-Change points identify statistical associations, not causal proof
-
-Multiple overlapping events may influence price shifts
-
-Market reactions may precede or lag event dates
-
-External drivers (FX, demand, speculation) are not explicitly modeled
-
-Communication of Results
-
-Investors: dashboards and summary reports highlighting regime shifts
-
-Policymakers: analytical reports supporting energy security decisions
-
-Energy companies: insights on volatility, risk, and operational planning
-
-Tools
-
-Python 3.11, Pandas, NumPy, Matplotlib, Statsmodels, PyMC, ArviZ, Jupyter
+cd frontend
+npm install
+npm run dev
